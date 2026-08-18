@@ -17,8 +17,8 @@
   <div class="ambient ambient-two"></div>
 
   <header class="topbar reveal">
-   <a class="brand" href="./">
-  <img src="LOGO.png" alt="Ahtesham Tech Logo" class="brand-logo">
+   <a class="brand" href="./" aria-label="Ahtesham Tech home">
+  <span class="brand-logo-wrap"><img src="LOGO.png" alt="Ahtesham Tech" class="brand-logo"></span>
   <span>
     <strong>AHTESHAM <em>TECH</em></strong>
     <small>TECHNOLOGY • SOLUTIONS • INNOVATION</small>
@@ -39,8 +39,8 @@
 
       <div class="search-card">
         <div class="search-tabs">
-          <button class="tab active" data-tab="id">Certificate ID</button>
-          <button class="tab" data-tab="qr">Scan QR Code</button>
+          <button class="tab active" type="button" data-tab="id">Certificate ID</button>
+          <button class="tab" type="button" data-tab="qr">Scan QR Code</button>
         </div>
 
         <div class="tab-panel active" id="id-panel">
@@ -57,8 +57,8 @@
         <div class="tab-panel" id="qr-panel">
           <div id="reader"></div>
           <div class="scanner-actions">
-            <button class="secondary-btn" id="startScanner">Start camera</button>
-            <button class="secondary-btn hidden" id="stopScanner">Stop camera</button>
+            <button class="secondary-btn" type="button" id="startScanner">Start camera</button>
+            <button class="secondary-btn hidden" type="button" id="stopScanner">Stop camera</button>
           </div>
           <p class="hint">Allow camera access, then point it at the QR code.</p>
         </div>
