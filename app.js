@@ -3,7 +3,7 @@ let scanner = null;
 const $ = (selector) => document.querySelector(selector);
 
 document.addEventListener("DOMContentLoaded", () => {
-  $("#year").textContent = new Date().getFullYear();
+  if ($("#year")) $("#year").textContent = new Date().getFullYear();
 
   document.querySelectorAll(".tab").forEach(btn => {
     btn.addEventListener("click", () => switchTab(btn.dataset.tab));
