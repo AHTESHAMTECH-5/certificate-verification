@@ -1,0 +1,15 @@
+AHTESHAM TECH CERTIFICATE VERIFICATION
+
+Upload all files in this folder to a GitHub repository.
+Then enable:
+GitHub -> Repository Settings -> Pages -> Deploy from branch -> main -> /root
+
+Before publishing:
+1. Edit certificates.js with real student records.
+2. Replace the sample certificate.
+3. Test ID verification.
+4. Open the live URL and use the QR generator.
+5. Put the generated QR URL on each certificate.
+
+Example:
+https://YOUR-USERNAME.github.io/certificate-verification/?id=AT-AAMP-2026-001

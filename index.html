@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Ahtesham Tech | Certificate Verification</title>
+  <meta name="description" content="Verify Ahtesham Tech certificates using a Certificate ID or QR code." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="./">
+      <span class="brand-mark">A</span>
+      <span>
+        <strong>AHTESHAM <em>TECH</em></strong>
+        <small>TECHNOLOGY • SOLUTIONS • INNOVATION</small>
+      </span>
+    </a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span></span> OFFICIAL VERIFICATION PORTAL</div>
+      <h1>Certificate<br><span>Verification</span></h1>
+      <p>Verify an Ahtesham Tech certificate instantly using its unique Certificate ID or scan the QR code printed on the certificate.</p>
+
+      <div class="search-card">
+        <div class="search-tabs">
+          <button class="tab active" data-tab="id">Certificate ID</button>
+          <button class="tab" data-tab="qr">Scan QR Code</button>
+        </div>
+
+        <div class="tab-panel active" id="id-panel">
+          <form id="verifyForm">
+            <label for="certificateId">Certificate ID</label>
+            <div class="input-row">
+              <input id="certificateId" autocomplete="off" placeholder="e.g. AT-AAMP-2026-001" />
+              <button class="primary-btn" type="submit">Verify</button>
+            </div>
+            <div class="hint">Enter the ID exactly as shown on the certificate.</div>
+          </form>
+        </div>
+
+        <div class="tab-panel" id="qr-panel">
+          <div id="reader"></div>
+          <div class="scanner-actions">
+            <button class="secondary-btn" id="startScanner">Start camera</button>
+            <button class="secondary-btn hidden" id="stopScanner">Stop camera</button>
+          </div>
+          <p class="hint">Allow camera access, then point it at the QR code.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="result-section" id="resultSection" aria-live="polite"></section>
+
+    <section class="trust">
+      <div>
+        <span class="trust-icon">✓</span>
+        <div><strong>Unique certificate IDs</strong><small>Each certificate has its own verification ID.</small></div>
+      </div>
+      <div>
+        <span class="trust-icon">⌁</span>
+        <div><strong>QR verification</strong><small>Scan the QR code to open the certificate directly.</small></div>
+      </div>
+      <div>
+        <span class="trust-icon">◎</span>
+        <div><strong>Fast & simple</strong><small>No account is required to verify a certificate.</small></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>
+      <strong>AHTESHAM TECH</strong>
+      <span>Technology • Solutions • Innovation</span>
+      <div class="socials">
+        <a href="https://www.youtube.com/@Ahtesham_Tech" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.instagram.com/ahtesham.tech/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <span>© <span id="year"></span> Ahtesham Tech</span>
+  </footer>
+
+  <script src="https://unpkg.com/html5-qrcode" defer></script>
+    <script src="certificates.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
