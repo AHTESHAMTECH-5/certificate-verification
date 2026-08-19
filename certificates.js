@@ -145,7 +145,7 @@ const CERTIFICATES = {
 
   "AT-AAMP-2026-009": {
     id: "AT-AAMP-2026-009",
-    name: "Nisha Firdosh",
+    name: "Nisha Firdous",
     programme: "AI & Digital Learning Programme",
     programmeContext: "Anna Akka Mentorship Programme",
     status: "Valid",
